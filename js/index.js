@@ -83,7 +83,7 @@ function initMap(){
  const distRange = () => {
     let dist = document.getElementById("quantity").value * 1000;
     let coordinates = ramaiah;
-    const API_URL = "https://evlocation.herokuapp.com/api/distRange';
+    const API_URL = 'https://evlocation.herokuapp.com/api/distRange';
     const fullUrl = `${API_URL}?range=${dist}&longitude=${coordinates.lng}&latitude=${coordinates.lat}`;
     fetch(fullUrl).then((response)=>{
         if(response.status == 200)
