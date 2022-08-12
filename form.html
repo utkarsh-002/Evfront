@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Educational registration form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="/form.css" rel="stylesheet">
+    <script src="/form.js"></script>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <h1>Register your Station</h1>
+      </div>
+        <div class="form">
+        <div class="info">
+          <input class="fname" id="station" type="text" name="name" placeholder="Station Name">
+          <input type="text" id="phNo" name="phNo" placeholder="Phone number">
+          <input type="text" id="openstatus" name="openstatus" placeholder="Open Status">
+          <input type="number" id="slot" name="slot" placeholder="Slots">
+          <input type="text" id="addressLine" name="addressLines" placeholder="Street Address">
+          <input type="number" id="postalCode" name="postalCode" placeholder="PostalCode">
+          <input type="text" id="city" name="city" placeholder="City">
+          <input type="text" id="state" name="state" placeholder="State">
+          <input type="text" id="lat" name="latitude" placeholder="Latitude">
+          <input type="text" id="lng" name="longitude" placeholder="Longitude">
+          <select id="type" name="type">
+            <option value="type" selected>Capacity Type</option>
+            <option value="rapid">Rapid</option>
+            <option value="fast">Fast</option>
+            <option value="slow">Slow</option>
+          </select>
+          <button onclick="collect()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
