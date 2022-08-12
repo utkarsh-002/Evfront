@@ -10,7 +10,7 @@ function collect() {
     let latitude = document.getElementById('lat').value.trim();
     let longitude = document.getElementById('lng').value.trim();
     let type = document.getElementById('type').value.trim();
-    const API_URL = 'http://localhost:3000/api/stations';
+    const API_URL = "https://evlocation.herokuapp.com/api/stations';
     // let add = {"streetAddressLine": name,
     // "city": city,
     // "State": state,

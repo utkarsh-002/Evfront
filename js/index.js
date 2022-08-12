@@ -31,7 +31,7 @@ function initMap(){
     if(!zipCode){
         return;
     }
-    const API_URL = 'http://localhost:3000/api/stations';
+    const API_URL = 'https://evlocation.herokuapp.com/api/stations';
     const fullUrl = `${API_URL}?zip_code=${zipCode}`;
     fetch(fullUrl).then((response)=>{
         if(response.status == 200){
@@ -56,7 +56,7 @@ function initMap(){
  }
 
  const currStations = ()=>{
-    const API_URL = 'http://localhost:3000/api/currStations';
+    const API_URL = 'https://evlocation.herokuapp.com/api/currStations';
     let coordinates = ramaiah;
     const fullUrl = `${API_URL}?longitude=${coordinates.lng}&latitude=${coordinates.lat}`;
     fetch(fullUrl).then((response)=>{
@@ -83,7 +83,7 @@ function initMap(){
  const distRange = () => {
     let dist = document.getElementById("quantity").value * 1000;
     let coordinates = ramaiah;
-    const API_URL = 'http://localhost:3000/api/distRange';
+    const API_URL = "https://evlocation.herokuapp.com/api/distRange';
     const fullUrl = `${API_URL}?range=${dist}&longitude=${coordinates.lng}&latitude=${coordinates.lat}`;
     fetch(fullUrl).then((response)=>{
         if(response.status == 200)
